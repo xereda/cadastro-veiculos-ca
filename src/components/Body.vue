@@ -1,23 +1,23 @@
 <template>
   <section class="section">
-    <div class="container is-fluid">
-      <jmob-loading v-show="loading"></jmob-loading>
+    <div class="container">
+      <loading v-show="loading"></loading>
       <router-view></router-view>
-      <jmob-floating-button></jmob-floating-button>
+      <floating-button></floating-button>
     </div>
   </section>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
-import JmobFloatingButton from './FloatingButton.vue'
-import JmobLoading from './Loading.vue'
+import FloatingButton from './FloatingButton.vue'
+import Loading from './Loading.vue'
 
 export default {
-  name: 'JmobBody',
+  name: 'Body',
   components: {
-    JmobLoading,
-    JmobFloatingButton
+    Loading,
+    FloatingButton
   },
   computed: {
     ...mapGetters([

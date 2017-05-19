@@ -1,22 +1,16 @@
 export default {
-  beers: [],
   states: {
     loading: false,
     currentPag: 1
   },
   config: {
-    api: {
-      uri: 'https://api.punkapi.com/v2/',
-      accessToken: ''
-    },
-    limitePerPage: 40,
+    limitePerPage: 5,
     images: {
       loading: '../../static/images/loading.gif',
       defaultImagePreview: 'static/images/backgroundImage.svg',
       logo: {
-        header: 'static/images/beerHeader.svg',
-        hero: 'static/images/beerHero.svg',
-        footer: 'static/images/transparentLogo.svg'
+        header: 'static/images/header-logo.svg',
+        footer: 'static/images/footer-logo.svg'
       }
     },
     urls: {
@@ -25,5 +19,31 @@ export default {
       github: 'https://github.com/xereda',
       twitter: 'https://twitter.com/xereda'
     }
-  }
+  },
+  cars: [
+    {
+      combustivel: 'Flex',
+      image: null,
+      manufacturer: 'Volkswagem',
+      model: 'Gol',
+      plate: 'FFF-5498',
+      value: '20000'
+    },
+    {
+      fuelType: 'Gasolina',
+      image: null,
+      manufacturer: 'Volkswagem',
+      model: 'Fox',
+      plate: 'FOX-4125',
+      value: '20000'
+    },
+    {
+      fuelType: 'Alcool',
+      image: 'http://carros.ig.com.br/fotos/2010/290_193/Fusca2_290_193.jpg',
+      manufacturer: 'Volkswagen',
+      model: 'Fusca',
+      plate: 'PAI-4121',
+      value: '20000'
+    }
+  ]
 }

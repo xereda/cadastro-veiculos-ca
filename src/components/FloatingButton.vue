@@ -3,7 +3,7 @@
     <div class="div-floating" v-if="scrolled">
       <p class="field">
         <!-- <a class="button is-primary" @click="scrollTo(0, 0)"> -->
-        <a class="button is-primary" v-scroll-to="{ el: '#top' }">
+        <a class="button is-info" v-scroll-to="{ el: '#top' }">
         <span class="icon">
           <i class="fa fa-arrow-circle-up"></i>
         </span>
@@ -15,6 +15,7 @@
 
 <script>
 export default {
+  name: 'FloatingButton',
   data () {
     return {
       scrolled: false

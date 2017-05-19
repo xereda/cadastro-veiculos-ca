@@ -1,7 +1,7 @@
 export default {
-  beers: state => {
-    const { beers } = state
-    return beers
+  cars: state => {
+    const { cars } = state
+    return cars
   },
   loading: state => {
     const { states } = state

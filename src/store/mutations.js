@@ -5,7 +5,7 @@ export default {
   'SET_CURRENT_PAG' (state, pag) {
     state.states.currentPag = pag
   },
-  'ADD_BEER' (state, beer) {
-    state.beers.push(beer)
+  'ADD_CAR' (state, car) {
+    state.car.push(car)
   }
 }

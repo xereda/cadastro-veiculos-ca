@@ -1,10 +1,10 @@
 <template>
   <div>
     <div id="top"></div>
-    <jmob-header></jmob-header>
-    <jmob-hero v-show="showHero"></jmob-hero>
-    <jmob-body></jmob-body>
-    <jmob-footer></jmob-footer>
+    <ca-header></ca-header>
+    <ca-hero></ca-hero>
+    <ca-body></ca-body>
+    <ca-footer></ca-footer>
   </div>
 </template>
 
@@ -13,45 +13,41 @@ import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
 Vue.use(VueScrollTo)
 
-import 'bulma'
-import 'font-awesome/scss/font-awesome.scss'
-import JmobHeader from './components/Header.vue'
-import JmobHero from './components/Hero.vue'
-import JmobBody from './components/Body.vue'
-import JmobFooter from './components/Footer.vue'
+import CaHeader from './components/Header.vue'
+import CaHero from './components/Hero.vue'
+import CaBody from './components/Body.vue'
+import CaFooter from './components/Footer.vue'
 
 export default {
   name: 'Main',
   data () {
     return {
-      showHero: false
     }
-  },
-  mounted () {
-    console.log('app.vue ---')
-    this.showHero = true
   },
   methods: {
   },
   components: {
-    JmobHeader,
-    JmobHero,
-    JmobBody,
-    JmobFooter
+    CaHeader,
+    CaHero,
+    CaBody,
+    CaFooter
   }
 }
 </script>
 
 <style lang="scss">
+  $fa-font-path: "~font-awesome/fonts/";
+  @import '~font-awesome/scss/font-awesome.scss';
   @import './scss/config';
+  @import '~bulma';
 
   .logo-header {
-    width: 125px;
+    width: $logo-header-width;
   }
   .fade-enter-active, .fade-leave-active {
     transition: opacity $transition-time
   }
-  .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  .fade-enter, .fade-leave-to {
     opacity: 0
   }
 </style>

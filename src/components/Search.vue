@@ -43,7 +43,7 @@
 import { computedMixins, methodsMixins } from '@/mixins/main'
 
 export default {
-  name: 'JmobSearch',
+  name: 'Search',
   mixins: [
     computedMixins,
     methodsMixins

@@ -5,7 +5,7 @@ export default {
     ...mapActions([
       'setLoading',
       'setCurrentPag',
-      'addBeer'
+      'addCar'
     ]),
     goTo (route) {
       this.$router.push({ name: route })

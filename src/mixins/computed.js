@@ -2,7 +2,7 @@ import { mapGetters } from 'vuex'
 export default {
   computed: {
     ...mapGetters([
-      'beers',
+      'cars',
       'config',
       'loading',
       'currentPag'

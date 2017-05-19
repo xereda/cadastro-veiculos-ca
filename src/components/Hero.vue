@@ -1,12 +1,11 @@
 <template>
   <transition name="fade">
-    <section class="hero is-small is-primary is-bold">
+    <section class="hero is-small is-info is-bold">
       <div class="hero-body custom-margin-left" id="home">
-        <div class="container is-fluid">
-          <img :src="config.images.logo.hero" class="logo-hero" alt="Bulma logo">
-          <!-- <h1 class="title">
-            Zup test
-          </h1> -->
+        <div class="container">
+          <h1 class="title">
+            CA Fleet System
+          </h1>
           <h2 class="subtitle">
             Test developed by <strong>Xereda</strong>.
           </h2>
@@ -15,9 +14,9 @@
       <!-- Hero footer: will stick at the bottom -->
       <div class="hero-foot custom-margin-left">
         <nav class="tabs is-boxed">
-          <div class="container is-fluid">
+          <div class="container">
             <ul>
-              <li :class="{ 'is-active': true }" @click="goTo('beers')"><a>Beers</a></li>
+              <li :class="{ 'is-active': true }" @click="goTo('cars')"><a>Cars</a></li>
             </ul>
           </div>
         </nav>
@@ -30,7 +29,7 @@
 import { methodsMixins, computedMixins } from '@/mixins/main'
 import { mapGetters } from 'vuex'
 export default {
-  name: 'JmobHero',
+  name: 'Hero',
   mixins: [
     methodsMixins,
     computedMixins

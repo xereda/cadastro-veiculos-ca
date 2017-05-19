@@ -5,7 +5,7 @@ export default {
   setCurrentPag (context, pag) {
     context.commit('SET_CURRENT_PAG', pag)
   },
-  addBeer (context, beer) {
-    context.commit('ADD_BEER', beer)
+  addCar (context, car) {
+    context.commit('ADD_CAR', car)
   }
 }

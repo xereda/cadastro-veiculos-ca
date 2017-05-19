@@ -1,9 +1,9 @@
 <template>
-  <div class="container is-fluid">
+  <div class="container">
     <nav class="nav is-medium">
       <div class="nav-left">
-        <a class="nav-item" @click="goTo('beers')">
-          <img :src="config.images.logo.header" class="logo-header" alt="Beer API List">
+        <a class="nav-item" @click="goTo('cars')">
+          <img :src="config.images.logo.header" class="logo-header" alt="Cars">
         </a>
       </div>
 
@@ -33,19 +33,19 @@
       <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
       <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
       <span :class="{ 'nav-toggle': true, 'is-active': isActiveSideMenu }" @click="setActiveMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="custom-hamburger-menu"></span>
+        <span class="custom-hamburger-menu"></span>
+        <span class="custom-hamburger-menu"></span>
       </span>
 
       <!-- This "nav-menu" is hidden on mobile -->
       <!-- Add the modifier "is-active" to display it on mobile -->
       <div id="side-menu" :class="{ 'nav-right': true, 'nav-menu': true, 'is-active': isActiveSideMenu, 'animated': true, 'slideInRight': true, 'slideOutRight': slideOut, }">
-        <a class="nav-item" @click="goToBySideMenu('beers')">
-          Beer List
+        <a class="nav-item" @click="goToBySideMenu('cars')">
+          Cars List
         </a>
         <span class="nav-item">
-          <a class="button is-primary" @click="goToBySideMenu('about')">
+          <a class="button is-info" @click="goToBySideMenu('about')">
             <span class="icon is-small">
               <i class="fa fa-user-circle"></i>
             </span>
@@ -61,7 +61,7 @@
 import { computedMixins, methodsMixins } from '@/mixins/main'
 
 export default {
-  name: 'JmobHeader',
+  name: 'Header',
   mixins: [
     computedMixins,
     methodsMixins
@@ -93,13 +93,17 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
   @import '~animate.css';
+  @import '../scss/config.scss';
 
   #side-menu {
-    animation-duration: 0.2s;
-    animation-delay: 0s;
-    /*animation-iteration-count: infinite;*/
+    animation-duration: $sidemenu-animation-duration;
+    animation-delay: $sidemenu-animation-delay;
+  }
+
+  .custom-hamburger-menu {
+    background-color: $hamburger-menu-color;
   }
 
 </style>
