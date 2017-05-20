@@ -2,7 +2,9 @@
   <section class="section">
     <div class="container">
       <loading v-show="loading"></loading>
-      <router-view></router-view>
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
       <floating-button></floating-button>
     </div>
   </section>

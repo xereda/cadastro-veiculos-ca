@@ -22,9 +22,9 @@ export default {
   },
   cars: [
     {
-      combustivel: 'Flex',
+      fuelType: 'Flex',
       image: null,
-      manufacturer: 'Volkswagem',
+      manufacturer: 'fiat',
       model: 'Gol',
       plate: 'FFF-5498',
       value: '20000'
@@ -32,7 +32,7 @@ export default {
     {
       fuelType: 'Gasolina',
       image: null,
-      manufacturer: 'Volkswagem',
+      manufacturer: 'renault',
       model: 'Fox',
       plate: 'FOX-4125',
       value: '20000'
@@ -40,7 +40,7 @@ export default {
     {
       fuelType: 'Alcool',
       image: 'http://carros.ig.com.br/fotos/2010/290_193/Fusca2_290_193.jpg',
-      manufacturer: 'Volkswagen',
+      manufacturer: 'vw',
       model: 'Fusca',
       plate: 'PAI-4121',
       value: '20000'

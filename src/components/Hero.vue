@@ -7,7 +7,7 @@
             CA Fleet System
           </h1>
           <h2 class="subtitle">
-            Test developed by <strong>Xereda</strong>.
+            Test developed by <a @click="$router.push({ name: 'about' })"><strong>@xereda</strong></a>.
           </h2>
         </div>
       </div>
