@@ -11,22 +11,22 @@
 </template>
 
 <script>
-import { computedMixins, methodsMixins } from '@/mixins/main'
+import { mapGetters } from 'vuex'
 import FloatingButton from './FloatingButton.vue'
 import Loading from './Loading.vue'
 
 export default {
   name: 'Body',
-  mounted () {
-    console.log(this.cars)
-  },
-  mixins: [
-    computedMixins,
-    methodsMixins
-  ],
   components: {
     Loading,
     FloatingButton
+  },
+  computed: {
+    ...mapGetters([
+      'loading'
+    ])
+  },
+  mounted () {
   }
 }
 </script>

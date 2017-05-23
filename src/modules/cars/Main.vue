@@ -1,9 +1,7 @@
 <template>
   <div class="">
-    <data-grid :schema="schema"
-               :data="cars"
-               :current-pag="currentPag"
-               :page-limite="config.limitePerPage"></data-grid>
+    <action-bar></action-bar>
+    <data-grid></data-grid>
     <pagination :total="cars.length"
                 :current-pag="currentPag"
                 :page-limite="config.limitePerPage"
@@ -14,8 +12,9 @@
 
 <script>
 import { methodsMixins, computedMixins } from '@/mixins/main'
-import DataGrid from '@/components/data-grid/DataGrid.vue'
-import Pagination from '@/components/data-grid/Pagination.vue'
+import DataGrid from './data-grid/DataGrid.vue'
+import Pagination from './data-grid/Pagination.vue'
+import ActionBar from './data-grid/ActionBar.vue'
 
 export default {
   name: 'CarsList',
@@ -23,21 +22,15 @@ export default {
     methodsMixins,
     computedMixins
   ],
-  data () {
-    return {
-    }
-  },
   methods: {
     openDetail (carId) {
       this.$router.push({ name: 'carDetail', params: { carId: carId } })
-    },
-    fetchCars () {
-      this.setLoading(true)
     }
   },
   components: {
     DataGrid,
-    Pagination
+    Pagination,
+    ActionBar
   }
 }
 </script>
