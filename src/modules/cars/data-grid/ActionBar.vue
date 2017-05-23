@@ -2,10 +2,51 @@
   <!-- Main container -->
   <nav class="level">
     <!-- Left side -->
-    <div class="level-left">
-      <div class="level-item"><a class="button is-success">Novo carro</a></div>
-      <div class="level-item" v-if="selectedsCars.length > 0"><a class="button is-danger" @click="remove()">Excluir</a></div>
-      <div class="level-item" v-if="selectedsCars.length > 0"><a class="button is-warning" @click="clear()">Limpar</a></div>
+    <!-- <div class="level-left">
+      <div class="level-item">
+        <div class="columns is-mobile ">
+          <div class="column">
+            <a class="button is-success">Novo carro</a>
+          </div>
+          <div class="column">
+            <a class="button is-danger" @click="remove()">Excluir</a>
+          </div>
+          <div class="column">
+            <a class="button is-warning" @click="clear()">Limpar</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="level-left" style="margin-bottom:20px;">
+      <div class="level-item">
+        <div class="field">
+            <a class="button is-success">
+              <span class="icon is-small">
+                <i class="fa fa-file-o"></i>
+              </span>
+              <span class="is-hidden-mobile">Novo carro</span>
+              <span class="is-hidden-tablet">Novo</span>
+            </a>
+            <a class="button is-danger" @click="remove()" v-if="selectedsCars.length > 0">>
+              <span class="icon is-small">
+                <i class="fa fa-trash-o"></i>
+              </span>
+              <span>Excluir</span>
+            </a>
+            <a class="button is-warning is-hidden-mobile" @click="clear()" v-if="selectedsCars.length > 0">>
+              <span class="icon is-small">
+                <i class="fa fa-eraser"></i>
+              </span>
+              <span class="">Limpar</span>
+            </a>
+            <a class="button is-warning is-hidden-tablet" @click="clear()" v-if="selectedsCars.length > 0">>
+              <span class="icon is-small">
+                <i class="fa fa-eraser"></i>
+              </span>
+            </a>
+        </div>
+      </div>
     </div>
 
     <!-- Right side -->
@@ -18,7 +59,7 @@
       </div>
     </div>
     <div class="level-right" v-show="textFilter.length === 0">
-      <div class="level-item">
+      <div class="level-item is-hidden-mobile">
         <p class="subtitle is-5">
           <strong>{{ cars.length }}</strong> carros
         </p>
