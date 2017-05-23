@@ -1,4 +1,8 @@
 export default {
+  schema: state => {
+    const { schema } = state
+    return schema
+  },
   cars: state => {
     const { cars } = state
     return cars

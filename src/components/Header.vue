@@ -33,9 +33,9 @@
       <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
       <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
       <span :class="{ 'nav-toggle': true, 'is-active': isActiveSideMenu }" @click="setActiveMenu()">
-        <span class="custom-hamburger-menu"></span>
-        <span class="custom-hamburger-menu"></span>
-        <span class="custom-hamburger-menu"></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </span>
 
       <!-- This "nav-menu" is hidden on mobile -->
@@ -45,7 +45,7 @@
           Cars List
         </a>
         <span class="nav-item">
-          <a class="button is-info" @click="goToBySideMenu('about')">
+          <a class="button is-primary" @click="goToBySideMenu('about')">
             <span class="icon is-small">
               <i class="fa fa-user-circle"></i>
             </span>
@@ -100,10 +100,6 @@ export default {
   #side-menu {
     animation-duration: $sidemenu-animation-duration;
     animation-delay: $sidemenu-animation-delay;
-  }
-
-  .custom-hamburger-menu {
-    background-color: $hamburger-menu-color;
   }
 
 </style>

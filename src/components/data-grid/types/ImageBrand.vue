@@ -8,13 +8,13 @@
 
 <script>
 export default {
-  name: 'Manufacturer',
+  name: 'GridImageBrand',
   props: [
-    'manufacturer'
+    'value'
   ],
   computed: {
     image () {
-      return '../static/images/manufacturer/' + this.manufacturer + '.svg'
+      return '../static/images/manufacturer/' + this.value + '.svg'
     }
   }
 }

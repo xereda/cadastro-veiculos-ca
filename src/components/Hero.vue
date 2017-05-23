@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <section class="hero is-small is-info is-bold">
+    <section class="hero is-small is-primary is-bold">
       <div class="hero-body custom-margin-left" id="home">
         <div class="container">
           <h1 class="title">
