@@ -5,6 +5,7 @@ export default {
       cars: 'cars/cars',
       config: 'config',
       loading: 'cars/loading',
+      textFilter: 'cars/textFilter',
       dialog: 'cars/dialog',
       currentPag: 'cars/currentPag',
       selectedsCars: 'cars/selectedsCars'

@@ -12,7 +12,8 @@ export default {
       selectPagCars: 'cars/selectPagCars',
       deselectPagCars: 'cars/deselectPagCars',
       removeCars: 'cars/removeCars',
-      clearSelection: 'cars/clearSelection'
+      clearSelection: 'cars/clearSelection',
+      setTextFilter: 'cars/setTextFilter'
     }),
     goTo (route) {
       this.$router.push({ name: route })

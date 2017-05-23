@@ -2,7 +2,8 @@ export default {
   states: {
     loading: false,
     currentPag: 1,
-    dialog: false
+    dialog: false,
+    filter: ''
   },
   cars: [
     {
@@ -143,7 +144,7 @@ export default {
     {
       fuelType: 'Alcool',
       image: 'http://carros.ig.com.br/fotos/2010/290_193/Fusca2_290_193.jpg',
-      manufacturer: 'vw',
+      manufacturer: 'volkswagen',
       model: 'Fusca',
       plate: 'PAI-4121',
       value: '20000',

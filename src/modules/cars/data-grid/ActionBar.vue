@@ -9,7 +9,15 @@
     </div>
 
     <!-- Right side -->
-    <div class="level-right">
+    <div class="level-right" v-show="textFilter.length > 0">
+      <div class="level-item">
+        <span class="tag is-warning is-medium">
+          {{ textFilter }}
+          <button class="delete is-small" @click="clearFilter()"></button>
+        </span>
+      </div>
+    </div>
+    <div class="level-right" v-show="textFilter.length === 0">
       <div class="level-item">
         <p class="subtitle is-5">
           <strong>{{ cars.length }}</strong> carros
@@ -18,10 +26,10 @@
       <div class="level-item">
         <div class="field has-addons">
           <p class="control">
-            <input class="input" type="text" placeholder="Localize um carro">
+            <input class="input" type="text" @keyup.enter="setFilter()" v-model="filter" placeholder="Localize um carro">
           </p>
           <p class="control">
-            <button class="button">
+            <button class="button" @click="setFilter()">
               Filtrar
             </button>
           </p>
@@ -40,6 +48,11 @@ export default {
     methodsMixins,
     computedMixins
   ],
+  data () {
+    return {
+      filter: ''
+    }
+  },
   methods: {
     remove () {
       console.log('remove cars')
@@ -48,6 +61,14 @@ export default {
     clear () {
       console.log('limpa a selecao')
       this.clearSelection()
+    },
+    clearFilter () {
+      this.filter = ''
+      this.setFilter()
+    },
+    setFilter () {
+      console.log('dentro da setFilter', this.filter)
+      this.setTextFilter(this.filter)
     }
   }
 }

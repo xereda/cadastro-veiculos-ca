@@ -31,5 +31,8 @@ export default {
   },
   clearSelection (context) {
     context.commit('CLEAR_SELECTION')
+  },
+  setTextFilter (context, filter) {
+    context.commit('SET_TEXT_FILTER', filter)
   }
 }

@@ -33,5 +33,9 @@ export default {
   'CLEAR_SELECTION' (state) {
     console.log('CLEAR_SELECTION')
     state.cars.map(e => { e.selected = false })
+  },
+  'SET_TEXT_FILTER' (state, filter) {
+    console.log('SET_TEXT_FILTER')
+    state.states.filter = filter
   }
 }

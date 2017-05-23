@@ -2,9 +2,10 @@
   <thead>
     <!-- {{ selectedsCars.length }} -->
     <!-- {{ allCarsSelectedsInPage }} -->
+    <!-- {{ paginatedData }} -->
     <tr>
       <th class="checkbox-column">
-        <input type="checkbox" class="checkbox custom-checkbox" v-model="selected" @click="selectAll($event.target.checked)" />
+        <input type="checkbox" class="checkbox custom-checkbox" v-show="paginatedData.length > 0" v-model="selected" @click="selectAll($event.target.checked)" />
       </th>
       <th>Placa</th>
       <th>Modelo</th>
