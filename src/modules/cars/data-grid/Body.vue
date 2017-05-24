@@ -26,7 +26,7 @@
         <monetary :value="car.value"></monetary>
       </td>
       <td class="zoom-column">
-        <a class="button is-small" @click="openDetail(111)">
+        <a class="button is-small" @click="openDetail(car.plate)">
           <span class="icon is-small">
             <i class="fa fa-search super"></i>
           </span>
@@ -56,6 +56,9 @@ export default {
   methods: {
     selectOne (car) {
       car.selected ? this.selectCar(car.plate) : this.deselectCar(car.plate)
+    },
+    openDetail (plate) {
+      this.$router.push({ name: 'detailCar', params: { carId: plate } })
     }
   },
   watch: {

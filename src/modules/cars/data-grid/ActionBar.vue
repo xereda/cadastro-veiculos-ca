@@ -1,27 +1,9 @@
 <template>
-  <!-- Main container -->
   <nav class="level">
-    <!-- Left side -->
-    <!-- <div class="level-left">
-      <div class="level-item">
-        <div class="columns is-mobile ">
-          <div class="column">
-            <a class="button is-success">Novo carro</a>
-          </div>
-          <div class="column">
-            <a class="button is-danger" @click="remove()">Excluir</a>
-          </div>
-          <div class="column">
-            <a class="button is-warning" @click="clear()">Limpar</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div class="level-left" style="margin-bottom:20px;">
       <div class="level-item">
         <div class="field">
-            <a class="button is-success">
+            <a class="button is-success" @click="goTo('newCar')">
               <span class="icon is-small">
                 <i class="fa fa-file-o"></i>
               </span>

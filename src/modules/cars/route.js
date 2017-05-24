@@ -1,5 +1,5 @@
 import Main from './Main.vue'
-import CarDetail from './CarDetail.vue'
+import CarForm from './CarForm.vue'
 
 export default [
   {
@@ -9,7 +9,12 @@ export default [
   },
   {
     path: '/cars/:carId',
-    name: 'carDetail',
-    component: CarDetail
+    name: 'detailCar',
+    component: CarForm
+  },
+  {
+    path: '/cars/new',
+    name: 'newCar',
+    component: CarForm
   }
 ]

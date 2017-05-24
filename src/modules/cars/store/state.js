@@ -12,7 +12,7 @@ export default {
   cars: [
     {
       fuelType: 'Flex',
-      image: null,
+      image: 'https://group.renault.com/wp-content/uploads/2015/09/megane.jpg',
       manufacturer: 'fiat',
       model: 'Gol',
       plate: '111-5498',

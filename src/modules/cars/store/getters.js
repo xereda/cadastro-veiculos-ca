@@ -19,6 +19,10 @@ export default {
     const { states } = state
     return states.loading
   },
+  sort: state => {
+    const { states } = state
+    return states.sort
+  },
   textFilter: state => {
     const { states } = state
     return states.filter
