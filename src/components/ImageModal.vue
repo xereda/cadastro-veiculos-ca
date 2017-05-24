@@ -35,7 +35,6 @@ export default {
       this.$emit('modal-close')
     },
     imageLoaded (instance) {
-      console.log(instance)
       this.setLoading(false)
       this.imageLoadedControl = true
     }

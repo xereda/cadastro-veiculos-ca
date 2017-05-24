@@ -2,7 +2,6 @@ import { orderBy as _orderBy } from 'lodash'
 
 export default {
   cars: state => {
-    console.log(state)
     const { cars } = state
     const { states } = state
     const { sort } = states
@@ -14,6 +13,10 @@ export default {
       if (e.manufacturer.toUpperCase().indexOf(_textFilter) > -1) return true
       return false
     })
+  },
+  payloadForm: state => {
+    const { payloadForm } = state
+    return payloadForm
   },
   loading: state => {
     const { states } = state

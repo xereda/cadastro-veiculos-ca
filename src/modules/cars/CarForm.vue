@@ -1,7 +1,10 @@
 <template>
   <div class="" id="car-detail">
     <breadcrumbs :objectLinks="breadcrumbsLinks"></breadcrumbs>
-    {{ $route.params }}
+    <h1 class="title">{{ title }}</h1>
+    <h2 class="subtitle">{{ subtitle }}</h2>
+    <hr>
+    <form-fields></form-fields>
   </div>
 </template>
 
@@ -9,6 +12,7 @@
 import jump from 'jump.js'
 import { methodsMixins, computedMixins } from '@/mixins/main'
 import Breadcrumbs from '@/components/Breadcrumbs.vue'
+import FormFields from './components/FormFields.vue'
 
 export default {
   data () {
@@ -26,8 +30,17 @@ export default {
   mounted () {
     jump('#top')
   },
+  computed: {
+    title () {
+      return this.$route.name === 'newCar' ? 'Novo veículo' : 'Alterando um veículo'
+    },
+    subtitle () {
+      return 'Cadastro de veículos'
+    }
+  },
   components: {
-    Breadcrumbs
+    Breadcrumbs,
+    FormFields
   }
 }
 </script>

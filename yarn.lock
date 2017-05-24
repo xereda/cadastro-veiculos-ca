@@ -256,6 +256,13 @@ autoprefixer@^6.3.1, autoprefixer@^6.7.2:
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
 
+awesome-mask@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/awesome-mask/-/awesome-mask-0.5.3.tgz#dd67edf6ec4ddc4df1e1f89823d1735547f7089b"
+  dependencies:
+    vanilla-masker "^1.0.9"
+    vue "^2.0.1"
+
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
@@ -713,6 +720,10 @@ babel-plugin-transform-exponentiation-operator@^6.22.0, babel-plugin-transform-e
     babel-helper-builder-binary-assignment-operator-visitor "^6.24.1"
     babel-plugin-syntax-exponentiation-operator "^6.8.0"
     babel-runtime "^6.22.0"
+
+babel-plugin-transform-inline-environment-variables@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-inline-environment-variables/-/babel-plugin-transform-inline-environment-variables-0.0.2.tgz#1372475c6c87f3c4ce6046587730ee041bc784b9"
 
 babel-plugin-transform-object-rest-spread@^6.22.0:
   version "6.23.0"
@@ -3330,6 +3341,10 @@ istanbul@^0.4.0:
     supports-color "^3.1.0"
     which "^1.1.1"
     wordwrap "^1.0.0"
+
+izitoast@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/izitoast/-/izitoast-1.1.1.tgz#8adc1f06d132ece339df8ffe863432ee2dbc2c04"
 
 jasmine-core@^2.6.1:
   version "2.6.1"
@@ -6096,6 +6111,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
 
+vanilla-masker@^1.0.9:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vanilla-masker/-/vanilla-masker-1.1.1.tgz#005c9200568f189e298f58b9cf00c8bc84821220"
+
 vary@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.1.tgz#67535ebb694c1d52257457984665323f587e8d37"
@@ -6186,9 +6205,15 @@ vue-template-es2015-compiler@^1.2.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.5.2.tgz#a0a6c50c941d2a4abda963f2f42c337ac450ee95"
 
-vue@^2.1.0, vue@^2.2.6:
+vue@^2.0.1, vue@^2.1.0, vue@^2.2.6:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.3.2.tgz#9e52aae3593480be235ff227557837e69f98203a"
+
+vuelidate@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/vuelidate/-/vuelidate-0.4.3.tgz#421a532359e63beb9822788c4f2d2036536d9ba2"
+  dependencies:
+    babel-plugin-transform-inline-environment-variables "^0.0.2"
 
 vuex@^2.3.1:
   version "2.3.1"

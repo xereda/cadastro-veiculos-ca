@@ -12,9 +12,9 @@
 
 <script>
 import { methodsMixins, computedMixins } from '@/mixins/main'
-import DataGrid from './data-grid/DataGrid.vue'
-import Pagination from './data-grid/Pagination.vue'
-import ActionBar from './data-grid/ActionBar.vue'
+import DataGrid from './components/data-grid/DataGrid.vue'
+import Pagination from './components/data-grid/Pagination.vue'
+import ActionBar from './components/data-grid/ActionBar.vue'
 
 export default {
   name: 'CarsList',

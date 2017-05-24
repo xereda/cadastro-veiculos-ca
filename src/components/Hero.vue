@@ -12,7 +12,7 @@
         </div>
       </div>
       <!-- Hero footer: will stick at the bottom -->
-      <div class="hero-foot custom-margin-left">
+      <div class="hero-foot custom-margin-left" v-show="$route.name !== 'about'">
         <nav class="tabs is-boxed">
           <div class="container">
             <ul>
@@ -36,7 +36,6 @@ export default {
   ],
   methods: {
     updateViewMode (size) {
-      console.log('rota: ', this.$route)
       if (this.$route.name !== 'beers') this.$router.push({ name: 'beers' })
       this.updateStateView(size)
       setTimeout(() => {

@@ -15,9 +15,11 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "awesome-mask": "^0.5.3",
     "axios": "^0.16.1",
     "bulma": "^0.4.1",
     "font-awesome": "^4.7.0",
+    "izitoast": "^1.1.1",
     "jasmine-core": "^2.6.1",
     "jump.js": "^1.0.2",
     "karma-jasmine": "^1.1.0",
@@ -34,6 +36,7 @@
     "vue-lazyload": "^1.0.3",
     "vue-router": "^2.3.1",
     "vue-scrollto": "^2.6.7",
+    "vuelidate": "^0.4.3",
     "vuex": "^2.3.1"
   },
   "devDependencies": {

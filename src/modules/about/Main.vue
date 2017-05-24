@@ -24,8 +24,6 @@
       - SCSS (scss/config.scss)
       - SVG Vector Images
       - Responsive Layout
-      - Infinite Scroll
-      - Axios
 
     </pre>
   </div>

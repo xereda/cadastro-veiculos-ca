@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import ImageModal from './ImageModal.vue'
+import ImageModal from '@/components/ImageModal.vue'
 
 export default {
   name: 'GridThumbnail',
@@ -19,12 +19,10 @@ export default {
   },
   methods: {
     modalOpen () {
-      console.log('modalOpen')
       if (this.value === null) return false
       this.modalControl = true
     },
     modalClose () {
-      console.log('modalClose')
       this.modalControl = false
     }
   },

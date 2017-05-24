@@ -7,6 +7,7 @@ export default {
       showDialog: 'cars/showDialog',
       setCurrentPag: 'cars/setCurrentPag',
       addCar: 'cars/addCar',
+      changeCar: 'cars/changeCar',
       selectCar: 'cars/selectCar',
       deselectCar: 'cars/deselectCar',
       selectPagCars: 'cars/selectPagCars',

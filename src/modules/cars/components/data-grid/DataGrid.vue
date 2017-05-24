@@ -12,7 +12,7 @@
 
 <script>
 import { computedMixins } from '@/mixins/main'
-import DialogTeste from './Dialog.vue'
+import DialogTeste from '../Dialog.vue'
 import GridHeader from './Header.vue'
 import GridBody from './Body.vue'
 

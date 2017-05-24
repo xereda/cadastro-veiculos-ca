@@ -78,11 +78,9 @@ export default {
   },
   methods: {
     remove () {
-      console.log('remove cars')
       this.showDialog(true)
     },
     clear () {
-      console.log('limpa a selecao')
       this.clearSelection()
     },
     clearFilter () {
@@ -90,7 +88,6 @@ export default {
       this.setFilter()
     },
     setFilter () {
-      console.log('dentro da setFilter', this.filter)
       this.setTextFilter(this.filter)
     }
   }

@@ -22,11 +22,7 @@ export default {
     }
   },
   methods: {
-    // scrollTo (x, y) {
-    //   window.scrollTo(x, y)
-    // },
     handleScroll () {
-      // console.log(window.scrollY)
       this.scrolled = window.scrollY > 54
     }
   },

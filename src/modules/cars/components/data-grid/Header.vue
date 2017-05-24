@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '../../../scss/config.scss';
+  @import '../../../../scss/config.scss';
   @import '~vue-directive-tooltip/css/index.min.css';
 
   .checkbox-column, .zoom-column {

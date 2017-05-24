@@ -17,9 +17,6 @@ import Loading from './Loading.vue'
 
 export default {
   name: 'Body',
-  mounted () {
-    console.log(this.cars)
-  },
   mixins: [
     computedMixins,
     methodsMixins
