@@ -19,11 +19,11 @@ export default {
   },
   'SELECT_PAG_CARS' (state, payload) {
     console.log('SELECT_PAG_CARS', payload)
-    state.cars.slice((payload.currentPag - 1) * payload.limitePerPage, payload.currentPag * payload.limitePerPage).map(e => { e.selected = true })
+    payload.cars.slice((payload.currentPag - 1) * payload.limitePerPage, payload.currentPag * payload.limitePerPage).map(e => { e.selected = true })
   },
   'DESELECT_PAG_CARS' (state, payload) {
     console.log('DESELECT_PAG_CARS', payload)
-    state.cars.slice((payload.currentPag - 1) * payload.limitePerPage, payload.currentPag * payload.limitePerPage).map(e => { e.selected = false })
+    payload.cars.slice((payload.currentPag - 1) * payload.limitePerPage, payload.currentPag * payload.limitePerPage).map(e => { e.selected = false })
   },
   'REMOVE_CARS' (state) {
     console.log('REMOVE_CARS')
@@ -37,5 +37,9 @@ export default {
   'SET_TEXT_FILTER' (state, filter) {
     console.log('SET_TEXT_FILTER')
     state.states.filter = filter
+  },
+  'SORT_COLUMN' (state, column) {
+    state.states.sort.column === column ? state.states.sort.asc = !state.states.sort.asc : state.states.sort.asc = true
+    state.states.sort.column = column
   }
 }

@@ -3,7 +3,11 @@ export default {
     loading: false,
     currentPag: 1,
     dialog: false,
-    filter: ''
+    filter: '',
+    sort: {
+      column: '',
+      asc: false
+    }
   },
   cars: [
     {

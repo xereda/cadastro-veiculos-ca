@@ -1,9 +1,15 @@
+import { orderBy as _orderBy } from 'lodash'
+
 export default {
   cars: state => {
     console.log(state)
     const { cars } = state
-    const _textFilter = state.states.filter.toUpperCase()
-    return cars.filter(e => {
+    const { states } = state
+    const { sort } = states
+    const direction = sort.asc ? 'asc' : 'desc'
+    const _sortedCars = _orderBy(cars, sort.column, direction)
+    const _textFilter = states.filter.toUpperCase()
+    return _sortedCars.filter(e => {
       if (e.fuelType.toUpperCase().indexOf(_textFilter) > -1) return true
       if (e.manufacturer.toUpperCase().indexOf(_textFilter) > -1) return true
       return false

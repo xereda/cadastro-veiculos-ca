@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="is-unselectable">
     <footer class="footer custom-heigh-footer">
       <nav class="level">
         <div class="level-item">

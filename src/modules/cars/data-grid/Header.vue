@@ -7,12 +7,12 @@
       <th class="checkbox-column">
         <input type="checkbox" class="checkbox custom-checkbox" v-show="paginatedData.length > 0" v-model="selected" @click="selectAll($event.target.checked)" />
       </th>
-      <th>Placa</th>
-      <th>Modelo</th>
-      <th class="is-hidden-mobile">Marca</th>
-      <th class="is-hidden-mobile">Foto</th>
-      <th class="is-hidden-mobile">Combustível</th>
-      <th class="is-hidden-mobile">Valor</th>
+      <th @click="sortColumn('plate')">Placa</th>
+      <th @click="sortColumn('model')">Modelo</th>
+      <th @click="sortColumn('manufacturer')" class="is-hidden-mobile">Marca</th>
+      <th @click="sortColumn('image')" class="is-hidden-mobile">Foto</th>
+      <th @click="sortColumn('fuelType')" class="is-hidden-mobile">Combustível</th>
+      <th @click="sortColumn('value')" class="is-hidden-mobile">Valor</th>
       <th class="zoom-column"></th>
     </tr>
   </thead>

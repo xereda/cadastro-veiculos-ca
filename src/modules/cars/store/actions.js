@@ -19,12 +19,12 @@ export default {
     context.commit('DESELECT_CAR', index)
   },
   selectPagCars (context, payload) {
-    console.log(payload)
-    context.commit('SELECT_PAG_CARS', payload)
+    console.log(payload, context.getters.cars)
+    context.commit('SELECT_PAG_CARS', { ...payload, cars: context.getters.cars })
   },
   deselectPagCars (context, payload) {
     console.log(payload)
-    context.commit('DESELECT_PAG_CARS', payload)
+    context.commit('DESELECT_PAG_CARS', { ...payload, cars: context.getters.cars })
   },
   removeCars (context) {
     context.commit('REMOVE_CARS')
@@ -34,5 +34,8 @@ export default {
   },
   setTextFilter (context, filter) {
     context.commit('SET_TEXT_FILTER', filter)
+  },
+  sortColumn (context, column) {
+    context.commit('SORT_COLUMN', column)
   }
 }
