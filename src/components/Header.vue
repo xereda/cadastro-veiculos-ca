@@ -3,7 +3,7 @@
     <nav class="nav is-medium">
       <div class="nav-left">
         <a class="nav-item" @click="goTo('cars')">
-          <img :src="config.images.logo.header" class="logo-header" alt="Cars">
+          <img :src="config.images.logo.header" class="logo-header" alt="Conta Azul">
         </a>
       </div>
 
@@ -42,7 +42,7 @@
       <!-- Add the modifier "is-active" to display it on mobile -->
       <div id="side-menu" :class="{ 'nav-right': true, 'nav-menu': true, 'is-active': isActiveSideMenu, 'animated': true, 'slideInRight': true, 'slideOutRight': slideOut, }">
         <a class="nav-item" @click="goToBySideMenu('cars')">
-          Cars List
+          Veículos
         </a>
         <span class="nav-item">
           <a class="button is-primary" @click="goToBySideMenu('about')">

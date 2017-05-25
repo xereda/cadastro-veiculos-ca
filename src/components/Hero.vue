@@ -16,7 +16,7 @@
         <nav class="tabs is-boxed">
           <div class="container">
             <ul>
-              <li :class="{ 'is-active': true }" @click="goTo('cars')"><a>Cars</a></li>
+              <li :class="{ 'is-active': true }" @click="goTo('cars')"><a>Veículos</a></li>
             </ul>
           </div>
         </nav>

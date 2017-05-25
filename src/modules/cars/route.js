@@ -8,13 +8,13 @@ export default [
     component: Main
   },
   {
-    path: '/cars/:carId',
-    name: 'detailCar',
+    path: '/cars/new',
+    name: 'newCar',
     component: CarForm
   },
   {
-    path: '/cars/new',
-    name: 'newCar',
+    path: '/cars/:carId',
+    name: 'detailCar',
     component: CarForm
   }
 ]
