@@ -10,19 +10,19 @@
               <span class="is-hidden-mobile">Novo carro</span>
               <span class="is-hidden-tablet">Novo</span>
             </a>
-            <a class="button is-danger" @click="remove()" v-if="selectedsCars.length > 0">>
+            <a class="button is-danger" @click="remove()" v-if="selectedsCars.length > 0">
               <span class="icon is-small">
                 <i class="fa fa-trash-o"></i>
               </span>
               <span>Excluir</span>
             </a>
-            <a class="button is-warning is-hidden-mobile" @click="clear()" v-if="selectedsCars.length > 0">>
+            <a class="button is-warning is-hidden-mobile" @click="clear()" v-if="selectedsCars.length > 0">
               <span class="icon is-small">
                 <i class="fa fa-eraser"></i>
               </span>
               <span class="">Limpar</span>
             </a>
-            <a class="button is-warning is-hidden-tablet" @click="clear()" v-if="selectedsCars.length > 0">>
+            <a class="button is-warning is-hidden-tablet" @click="clear()" v-if="selectedsCars.length > 0">
               <span class="icon is-small">
                 <i class="fa fa-eraser"></i>
               </span>
