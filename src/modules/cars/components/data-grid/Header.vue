@@ -1,6 +1,6 @@
 <template>
   <thead>
-    <tr class="is-unselectable" v-tooltip="defineToolTipContent">
+    <tr class="is-unselectable">
       <th class="checkbox-column">
         <input type="checkbox" class="checkbox custom-checkbox" v-show="paginatedData.length > 0" v-model="selected" @click="selectAll($event.target.checked)" />
       </th>
@@ -18,9 +18,6 @@
 <script>
 import { computedMixins, methodsMixins } from '@/mixins/main'
 import SortIcon from './SortIcon.vue'
-import Vue from 'vue'
-import Tooltip from 'vue-directive-tooltip'
-Vue.use(Tooltip)
 
 export default {
   name: 'GridHeader',
@@ -40,10 +37,6 @@ export default {
     }
   },
   computed: {
-    defineToolTipContent () {
-      const _obj = { content: 'Você pode ordenar pelas colunas. Basta clicar. ', class: 'vue-tooltip-primary' }
-      return _obj
-    }
   },
   components: {
     SortIcon
@@ -67,19 +60,6 @@ export default {
   table tr th {
     font-size: .9em;
     cursor: pointer;
-  }
-
-  .vue-tooltip-success {
-    background-color: $green !important;
-  }
-  .vue-tooltip-primary {
-    background-color: $primary !important;
-  }
-  .vue-tooltip-danger {
-    background-color: $red;
-  }
-  .vue-tooltip-warning {
-    background-color: $yellow;
   }
 
 
