@@ -18,7 +18,7 @@ export default {
   data () {
     return {
       breadcrumbsLinks: [
-        { go: -1, name: 'Cars', activedLink: true },
+        { go: -1, name: 'Veículos', activedLink: true },
         { name: this.$route.name === 'newCar' ? 'Novo' : 'Detalhes', activedLink: false }
       ]
     }
